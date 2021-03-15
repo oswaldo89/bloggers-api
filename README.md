@@ -12,3 +12,6 @@ composer 2.0
 run > composer install  
 
 2.- run > php artisan migrate  
+
+## API Documentation  
+https://documenter.getpostman.com/view/456192/Tz5qbcw1  

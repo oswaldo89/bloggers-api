@@ -8,7 +8,7 @@ composer 2.0
 1.- Needs create database in your server  
 - Example::  
 - run > mysql -u root -p  
-- run > create database database_name; 
+- run > create database database_name;  
 run > composer install  
 
 run > php artisan migrate  

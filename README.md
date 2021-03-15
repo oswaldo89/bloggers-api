@@ -11,4 +11,4 @@ composer 2.0
 - run > create database database_name;  
 run > composer install  
 
-run > php artisan migrate  
+2.- run > php artisan migrate  

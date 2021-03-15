@@ -9,5 +9,6 @@ composer 2.0
 - Example::  
 - run > mysql -u root -p  
 - run > create database database_name; 
-run > composer intall  
+run > composer install  
+
 run > php artisan migrate  

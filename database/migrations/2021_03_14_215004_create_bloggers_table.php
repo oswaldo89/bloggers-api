@@ -18,6 +18,7 @@ class CreateBloggersTable extends Migration
             $table->string("name");
             $table->string("email");
             $table->string("website");
+            $table->string("description");
             $table->string("picture")->nullable();
             $table->timestamps();
         });

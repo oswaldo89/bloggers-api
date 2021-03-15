@@ -16,6 +16,11 @@ class BloggerController extends BaseController
         return $this->sendResponse($bloggers, 'Bloggers retrived successfully.');
     }
 
+    public function getByCategoryId($categoryId){
+        $bloggers = Blogger::where("category_id", $categoryId)->get();
+        return $this->sendResponse($bloggers, 'Bloggers retrived successfully.');
+    }
+
     public function store(Request $request)
     {
         $input = $request->all();
@@ -32,7 +37,10 @@ class BloggerController extends BaseController
         $blogger = Blogger::create([
             'name' => $request->get('name'),
             'email' => $request->get('email'),
-            'website' => $request->get('website')
+            'website' => $request->get('website'),
+            'description' => $request->get('description'),
+            'picture' => $request->get('picture'),
+            'category_id' => $request->get('category_id')
         ]);
 
         if($blogger){
@@ -42,20 +50,5 @@ class BloggerController extends BaseController
         }
 
 
-    }
-
-    public function show($id)
-    {
-        //
-    }
-
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    public function destroy($id)
-    {
-        //
     }
 }
